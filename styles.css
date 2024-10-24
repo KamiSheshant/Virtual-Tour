@@ -1,0 +1,204 @@
+/* General body settings */
+h2{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
+    /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Page Container */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Form container */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+/* Form box */
+.form-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Input fields */
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-bottom-color: #fff;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: #ddd;
+    font-size: 18px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label {
+    top: -20px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Login button */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #fff;
+    color: #FC5C7D;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #FC5C7D;
+    color: #fff;
+}
+
+/* Error message */
+#error-message {
+    color: #FF3333;
+    margin-top: 10px;
+}
+
+.map-section {
+    margin: 20px;
+}
+
+.campus-map {
+    width: 600px;
+    /* Adjust based on your image size */
+    height: auto;
+    margin: 20px 0;
+    position: relative;
+}
+
+.map-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hover areas (adjust top, left, width, height to match the map layout) */
+.hover-area {
+    position: absolute;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+#library {
+    top: 40%;
+    /* Adjust these values to place hover area correctly on map */
+    left: 75%;
+    width: 50px;
+    height: 50px;
+}
+
+#classes {
+    top: 15%;
+    left: 68%;
+    width: 50px;
+    height: 50px;
+}
+
+#sports {
+    top: 55%;
+    left: 35%;
+    width: 50px;
+    height: 50px;
+}
+
+#labs {
+    top: 20%;
+    left: 25%;
+    width: 50px;
+    height: 50px;
+
+}
+
+
+/* Popup text styling */
+.popup-text {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+/* Popup image styling */
+.popup-image {
+    display: none;
+    position: absolute;
+    bottom: 100%; /* Place image just above the hover area */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;  /* Adjust size of the image */
+    border-radius: 8px;
+    z-index: 5; /* Image below the popup text */
+}
+
+/* Show popup text and image on hover */
+.hover-area:hover {
+    border-color: #5cb85c;
+}
+
+.hover-area:hover .popup-text {
+    display: block;
+}
+
+.hover-area:hover .popup-image {
+    display: block;
+}
+

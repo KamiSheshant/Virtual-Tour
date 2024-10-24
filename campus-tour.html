@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Voyager - Virtual Tour</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <pre><h1>Explore Our Campus
+By Hovering To Specific Buildings</h1></pre>
+        
+    </header>
+
+    <section class="map-section">
+        <h2>Campus Map</h2>
+      
+        <div class="map-container">
+            <!-- Simple campus map image -->
+            <img src="preview.webp" alt="Campus Map" class="campus-map" >
+
+            <!-- Hover areas with popups -->
+            <div class="hover-area" id="library">
+                <span class="popup-text">Library: A large collection of books and resources.</span>
+                <img src="lib1.jpeg" alt="Library" class="popup-image">
+            </div>
+            <div class="hover-area" id="labs">
+                <span class="popup-text">Labs: Fully equipped computer and science labs.</span>
+                <img src="lab1.jpg" alt="Library" class="popup-image">
+            </div>
+            <div class="hover-area" id="sports">
+                <span class="popup-text">Sports Complex: Facilities for various sports activities.</span>
+                <img src="ground.jpg" alt="Library" class="popup-image">
+            </div>
+            <div class="hover-area" id="classes">
+                <span class="popup-text">Smart Classes: Facilities for various interactive classes.</span>
+                <img src="smart-class.jpg" alt="Library" class="popup-image">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
